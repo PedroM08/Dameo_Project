@@ -1,0 +1,46 @@
+# Dameo Project Improvements Summary
+Overview of Changes from Version 1 to Version 2
+This document summarizes the improvements made between version 1 and version 2 of the Dameo
+game project. The changes include structural improvements, code refinements, new features, and AI
+enhancements.
+
+# Improved AI Implementation
+## AI Player Enhancements
+- AI Constructor Changes: Changed the AI initialization to accept a color parameter, making it easier to have AIs control either red or blue pieces.
+- Evaluation Functions: More sophisticated evaluation functions in minimax_2.py that consider:
+  - Piece counts
+  - King counts
+  - Positional advantages (distance to promotion rank)
+  - Strategic positioning
+
+# AI Architecture
+Organized AI Hierarchy: Cleaner separation between different AI implementations with dedicated
+files.
+
+# Game Logic Improvements
+## Capturing Mechanics
+- King Captures: Improved king capture logic with direction restrictions during multi-captures.
+- Multi-capture Sequences: Better handling of forced multi-capture sequences.
+- Direction Tracking: Added tracking for the last direction a king moved, enforcing the rule that kings
+cannot reverse direction in a capture sequence.
+
+# Game Flow
+- Turn Tracking: Added game_turns counter to track the number of turns played.
+- Game Timing: Added timing functionality to measure how long games take.
+
+# UI Improvements 
+## Interface Elements 
+- Instructions: Added an info button and instructions screen.
+-  Return to Lobby: Added a return-to-lobby button for better navigation between game states. 
+- AI Selection: Improved UI for selecting AI difficulty in both Player vs AI and AI vs AI modes. 
+
+# Performance and Structure
+- Code Organization 
+- Function Refactoring: Better organization of functions with clearer responsibilities.
+- Parameter Documentation: Improved comments explaining parameters and return values.
+
+# Performance Optimizations 
+- Alpha-Beta Pruning: Added pruning in minimax_3.py to dramatically improve search efficiency. 
+
+# Bug Fixes 
+- King Promotion: Fixed issues with king promotion during multi-capture sequences.
