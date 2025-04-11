@@ -87,6 +87,8 @@ In **PvAI** and **AIvAI** modes, you can choose different AI levels:
 | 2     | `Minimax2`          | Minimax with additional heuristics (progression to king) |
 | 3     | `MinimaxAlphaBeta`  | Minimax with Alpha-Beta pruning and depth 4              |
 
+**To change the depth of each AI, go to the Ai's file and is in the __init__() mehtod**
+
 ---
 
 ## Technical Requirements
